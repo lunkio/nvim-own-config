@@ -7,8 +7,8 @@ require("keymaps")
 -- load lazy.nvim (package manager)
 require("lazy-nvim")
 
--- Set colorscheme
+-- configure colorscheme
 require("colorscheme")
 
--- Set LSP
+-- configure LSP
 require("lsp")
