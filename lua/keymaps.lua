@@ -15,6 +15,10 @@ vim.keymap.set("n", "<C-w>L", [[<cmd>vertical resize -10<cr>]], opts)  -- make t
 vim.keymap.set("n", "<C-w>J", [[<cmd>horizontal resize +5<cr>]], opts) -- make the window bigger horizontally by pressing shift and =
 vim.keymap.set("n", "<C-w>K", [[<cmd>horizontal resize -5<cr>]], opts) -- make the window smaller horizontally by pressing shift and -
 
+vim.keymap.set("n", "<C-t>t", [[<cmd>tabnew]], opts)
+vim.keymap.set("n", "<C-t>n", [[<cmd>tabnext]], opts)
+vim.keymap.set("n", "<C-t>p", [[<cmd>tabprevious]], opts)
+vim.keymap.set("n", "<C-t>c", [[<cmd>tabclose]], opts)
 -----------------
 -- Visual mode --
 -----------------
