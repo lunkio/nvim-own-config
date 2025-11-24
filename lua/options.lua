@@ -13,6 +13,16 @@ vim.opt.softtabstop = 4  -- number of spaces in tab when editing
 vim.opt.shiftwidth = 4   -- insert 4 spaces on a tab
 vim.opt.expandtab = true -- tabs are spaces, mainly because of Python
 
+-- Indentation
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "cpp", "c", "h", "hpp" },
+    callback = function()
+        vim.opt.tabstop = 2     -- the number of visual spaces per TAB
+        vim.opt.softtabstop = 2 -- number of spaces in tab when editing
+        vim.opt.shiftwidth = 2  -- insert 4 spaces on a tab
+    end,
+})
+
 -- UI config
 vim.opt.relativenumber = true -- add numbers to each line on the left side
 vim.opt.cursorline = true     -- highlight cursor line underneath the cursor horizontally
