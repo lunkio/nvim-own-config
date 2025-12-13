@@ -7,11 +7,11 @@ require("keymaps")
 -- load autocmd
 require("autocmd")
 
--- load colorscheme
-require("colorscheme")
-
 -- load lazy.nvim (package manager)
 require("lazy-nvim")
+
+-- load colorscheme
+require("colorscheme")
 
 -- configure LSP
 require("lsp")
