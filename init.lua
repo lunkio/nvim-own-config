@@ -12,3 +12,6 @@ require("colorscheme")
 
 -- configure LSP
 require("lsp")
+
+--configure autocmd
+require("autocmd")
