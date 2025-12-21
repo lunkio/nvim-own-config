@@ -29,10 +29,5 @@ return {
         },
     },
 
-    config = function(_, opts)
-        require("nvim-treesitter.configs").setup(opts)
 
-        -- 提高解析器优先级（解决和 lsp 冲突的问题）
-        vim.treesitter.language.register("bash", { "zsh" })
-    end,
 }
