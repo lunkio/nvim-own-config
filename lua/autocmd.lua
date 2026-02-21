@@ -1,10 +1,18 @@
 -- Indentation
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "cpp", "c", "h", "hpp" },
+    pattern = { "c", "h" },
+    callback = function()
+        vim.opt.tabstop = 8     -- the number of visual spaces per TAB
+        vim.opt.expandtab = false 
+    end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "cpp", "hpp" },
     callback = function()
         vim.opt.tabstop = 2     -- the number of visual spaces per TAB
-        vim.opt.softtabstop = 2 -- number of spaces in tab when editing
-        vim.opt.shiftwidth = 2  -- insert 4 spaces on a tab
+        vim.opt.softtabstop = 2  -- number of spaces in tab when editing
+        vim.opt.shiftwidth = 2   -- insert 2 spaces on a tab
     end,
 })
 
